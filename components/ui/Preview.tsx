@@ -46,7 +46,7 @@ export default function Preview() {
       <p className='text-xl'>Создан разработчиком TeaWithSugar для себя</p>
       <motion.div className='cursor-pointer' whileTap={{scale: 0.9, rotate:randomRotate.current}} whileHover={{scale: 1.1}} transition={{type:'spring', duration:0.7, bounce:0.7}} onClick={()=>setCount(prevState => prevState + 1)}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={Cat.src} alt="Котик" draggable={false} />
+        <img src={Cat.src} alt="Котик" draggable={false} className='select-none'/>
       </motion.div>
       <p className='text-lg font-medium relative'>Вы тапнули котика: <AnimateCounter count={count}/> {getTimesWord(count)} :з</p>
     </article>
