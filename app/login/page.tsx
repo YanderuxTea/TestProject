@@ -1,4 +1,4 @@
-import Header from '@/public/components/ui/Header'
+import Header from '@/components/ui/Header'
 
 export default function page() {
   return <main>

@@ -1,9 +1,9 @@
 'use client'
 import Image from 'next/image'
-import Cat from  '@/public/Image/Cat.png'
+import Cat from '@/public/Image/Cat.png'
 import {motion} from 'framer-motion'
 import {useEffect, useState} from 'react'
-import AnimateCounter from '@/public/components/shared/AnimateCounter'
+import AnimateCounter from '@/components/shared/AnimateCounter'
 import localforage from 'localforage'
 
 export default function Preview() {
