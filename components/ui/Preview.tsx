@@ -1,6 +1,5 @@
 'use client'
-import Image from 'next/image'
-import Cat from '@/public/Image/Cat.png'
+import Cat from '@/public/svg/Cat.svg'
 import {motion} from 'framer-motion'
 import {useEffect, useState} from 'react'
 import AnimateCounter from '@/components/shared/AnimateCounter'
@@ -42,7 +41,8 @@ export default function Preview() {
       <h1 className='text-balance font-extrabold text-3xl'>Это тестовый проект для освоения backend разработки</h1>
       <p className='text-xl'>Создан разработчиком TeaWithSugar для себя</p>
       <motion.div className='cursor-pointer' whileTap={{scale: 0.9}} whileHover={{scale: 1.1}} transition={{type:'spring'}} onClick={()=>setCount(prevState => prevState + 1)}>
-        <Image src={Cat} alt='Котик' width={256} priority draggable={false} />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={Cat.src} alt="Котик" draggable={false} />
       </motion.div>
       <p className='text-lg font-medium relative'>Вы тапнули котика: <AnimateCounter count={count}/> {getTimesWord(count)} :з</p>
     </article>
