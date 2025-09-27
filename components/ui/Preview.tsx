@@ -40,7 +40,7 @@ export default function Preview() {
     const max = 5;
     randomRotate.current = Math.floor(Math.random() * (max - min)) + min;
   }, [count])
-  return <section className='grow flex justify-center items-center p-2.5'>
+  return <section className='flex justify-center items-center p-2.5 min-h-screen max-w-300 mx-auto w-full'>
     <article className='text-wrap flex flex-col gap-5 text-center items-center'>
       <h1 className='text-balance font-extrabold text-3xl'>Это тестовый проект для освоения backend разработки</h1>
       <p className='text-xl'>Создан разработчиком TeaWithSugar для себя</p>

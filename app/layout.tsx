@@ -5,6 +5,7 @@ import {montserrat} from '@/public/font'
 import {ThemeProvider} from 'next-themes'
 
 
+
 export const metadata: Metadata = {
   title: "TestProject",
 };
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`antialiased ${montserrat.className} bg-white dark:bg-[#202020] transition-colors duration-200 ease-out`}
+        className={`antialiased ${montserrat.className} bg-white dark:bg-[#181818]`}
       >
       <ThemeProvider
         attribute="class"
