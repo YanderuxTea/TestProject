@@ -19,7 +19,7 @@ export default function AnimateSwitcherThemes() {
         setCurrentButton( index)
       }})
   }, [])
-  return <div className='border flex items-center p-1 rounded-full border-[#212121]/20 dark:border-[#212121]'>
+  return <div className='border flex items-center p-1 rounded-full border-[#212121]/20 dark:border-[#212121] bg-gray-100 dark:bg-[#191919]'>
     {arrayButton.map((buttonSet,index) => {
       return <button className='relative w-10 aspect-square' key={index} onClick={()=>changeTheme(buttonSet, index)}>
         <div className='z-1 absolute inset-0 flex justify-center items-center cursor-pointer'>{buttonSet==='system'?<Monitor/>:buttonSet==='light'?<Sun/>:<Moon/>}</div>

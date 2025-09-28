@@ -1,7 +1,6 @@
-import Header from '@/components/ui/Header'
+import FormLoginRegister from '@/components/ui/FormLoginRegister'
 
 export default function page() {
-  return <main>
-    <Header/>
-  </main>
+  return<FormLoginRegister/>
+
 }

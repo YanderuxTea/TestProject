@@ -39,7 +39,7 @@ export default function Header() {
   return <><motion.header className='bg-white dark:bg-[#181818] w-full flex items-center justify-center  py-2.5 fixed z-100 border-b border-[#212121]/20 dark:border-[#212121]' animate={{transform: `translateY(${translateY}%)`}}>
     <div className='max-w-300 bg-white dark:bg-[#181818] flex flex-row justify-between w-full px-2.5 h-10 items-center'>
       <Link href={'/'} className='font-bold text-xl'>TestProject</Link>
-      {currentWidth < 768?<button onClick={()=>openMenu()}><Menu/></button>:<Link href='/auth/login' className='border-black dark:border-white border py-1 px-2.5 hover:bg-white hover:text-black transition-colors duration-300 ease-in-out text-md font-medium'>Войти</Link>}
+      {currentWidth < 768?<button onClick={()=>openMenu()}><Menu/></button>:<Link href='/auth/login' className='border-black dark:border-white border py-1 px-2.5 dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white transition-colors duration-300 ease-in-out text-md font-medium'>Войти</Link>}
     </div>
   </motion.header>
     <AnimatePresence>
